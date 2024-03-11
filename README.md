@@ -13,97 +13,83 @@ The file explorer is accessible using the button in left corner of the navigatio
 
 ## 3. Dataset Information
 
-All your files and folders are presented as a tree in the file explorer. You can switch from one to another by clicking a file in the tree.
+Brief introduction to the dataset.
 
 ### 3.1 Background
 
-You can rename the current file by clicking the file name in the navigation bar or by clicking the **Rename** button in the file explorer.
+Detailed introduction to the data sources, why it was collected, and why they were chosen for this project.
 
 ### 3.2 Collection
 
-You can delete the current file by clicking the **Remove** button in the file explorer. The file will be moved into the **Trash** folder and automatically deleted after 7 days of inactivity.
+Describe how the data was taken from the sources into the final use for this project.
 
 ### 3.3 Limitations
 
-You can export the current file by clicking **Export to disk** in the menu. You can choose to export the file as plain Markdown, as HTML using a Handlebars template or as a PDF.
-
+Overview the limitations of the data sources, why the limitations exist, and possible complications that may arise from those limitations. (Weather, missing/incorrect data, unofficial results, etc)
 
 ## 4. Data Curation & Preparation
 
-Synchronization is one of the biggest features of StackEdit. It enables you to synchronize any file in your workspace with other files stored in your **Google Drive**, your **Dropbox** and your **GitHub** accounts. This allows you to keep writing on other devices, collaborate with people you share the file with, integrate easily into your workflow... The synchronization mechanism takes place every minute in the background, downloading, merging, and uploading file modifications.
-
-There are two types of synchronization and they can complement each other:
-
-- The workspace synchronization will sync all your files, folders and settings automatically. This will allow you to fetch your workspace on any other device.
-	> To start syncing your workspace, just sign in with Google in the menu.
-
-- The file synchronization will keep one file of the workspace synced with one or multiple files in **Google Drive**, **Dropbox** or **GitHub**.
-	> Before starting to sync files, you must link an account in the **Synchronize** sub-menu.
-
-## 4. Model Building
-
-You can open a file from **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Open from**. Once opened in the workspace, any modification in the file will be automatically synced.
-
-### 4.1 Model Selection
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-### 4.2 Model Training
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-### 4.3 Model Performance & Evaluation
-
-You can save any file of the workspace to **Google Drive**, **Dropbox** or **GitHub** by opening the **Synchronize** sub-menu and clicking **Save on**. Even if a file in the workspace is already synced, you can save it to another location. StackEdit can sync one file with multiple locations and accounts.
-
-## 5. Results
-
-Once your file is linked to a synchronized location, StackEdit will periodically synchronize it by downloading/uploading any modification. A merge will be performed if necessary and conflicts will be resolved.
-
-If you just have modified your file and you want to force syncing, click the **Synchronize now** button in the navigation bar.
-
-> **Note:** The **Synchronize now** button is disabled if you have no file to synchronize.
-
-### 5.1 Model Forecast
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
-
-### 5.2 Comparative Analysis
-
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+Detailed description of what data was used for the project (describe all rows/columns)
 
 
-## 6. Discussion
+## 5. Model Building
 
-Publishing in StackEdit makes it simple for you to publish online your files. Once you're happy with a file, you can publish it to different hosting platforms like **Blogger**, **Dropbox**, **Gist**, **GitHub**, **Google Drive**, **WordPress** and **Zendesk**. With [Handlebars templates](http://handlebarsjs.com/), you have full control over what you export.
+Brief introduction to the ML model and the process of building one.
 
-> Before starting to publish, you must link an account in the **Publish** sub-menu.
+### 5.1 Model Selection
 
-### 6.1 Variance Across Disciplines
+Detailed description of what model was chosen and why
 
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+### 5.2 Model Training
 
-### 6.2 Similarities Across Disciplines
+Explain the training process, data split for training/testing sets, and possible
+retraining
 
-Since one file can be synced with multiple locations, you can list and manage synchronized locations by clicking **File synchronization** in the **Synchronize** sub-menu. This allows you to list and remove synchronized locations that are linked to your file.
+### 5.3 Model Performance & Evaluation
 
-## 7. Challenges
+Explain the performance of the model, if it is viable to use in production, or if
+adjustments must be made.
 
-You can publish your file by opening the **Publish** sub-menu and by clicking **Publish to**. For some locations, you can choose between the following formats:
+## 6. Results
 
-- Markdown: publish the Markdown text on a website that can interpret it (**GitHub** for instance),
-- HTML: publish the file converted to HTML via a Handlebars template (on a blog for example).
+Brief introduction to the results of the model(s)
 
-## 8. Conclusion
+### 6.1 Model Forecast
 
-After publishing, StackEdit keeps your file linked to that publication which makes it easy for you to re-publish it. Once you have modified your file and you want to update your publication, click on the **Publish now** button in the navigation bar.
+Detailed look at where the model(s) say each discipline will project to.
 
-> **Note:** The **Publish now** button is disabled if your file has not been published yet.
+### 6.2 Comparative Analysis
 
-## 9. Future Work
+Detailed look at how the historical progression differs among disciplines.
 
-Since one file can be published to multiple locations, you can list and manage publish locations by clicking **File publication** in the **Publish** sub-menu. This allows you to list and remove publication locations that are linked to your file.
+## 7. Discussion
 
+(IF NEEDED) Brief detail of additional discussion topics not included in previous or future sections.
+
+### 7.1 Variance Across Disciplines
+
+(IF NEEDED) Dive into the details of if there are differences in the progression
+of each discipline, and why that may be the case
+
+### 7.2 Similarities Across Disciplines
+
+(IF NEEDED) Dive into the details of if there are similarities in the progression
+of each discipline, and why that may be the case
+
+## 8. Challenges
+
+Identify the obstacles faced during the process, including challenges the model
+faces and challenges in analyzing the results
+
+## 9. Conclusion
+
+Come to a final stance on the main points outlined at the beginning, using the
+results from this study as the evidence for such a claim
+
+## 10. Future Work
+
+Determine what the next possible steps will be in researching this topic. (Larger
+sample size, different approach, narrower/broader scope, etc.)
 
 # References
 StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.

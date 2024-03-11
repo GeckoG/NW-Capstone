@@ -1,15 +1,15 @@
 # Variance and Trajectory of Collective Performance Advancements across Track and Field Disciplines
 
-**Abstract:** If you want to learn about StackEdit, you can read me. If you want to play with Markdown, you can edit me. Once you have finished with me, you can create new files by opening on the left corner of the navigation bar.
+**Abstract:** The abstract should briefly summarize the contents of the paper in 150--250 words.
 
 
 ## 1. Introduction
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
+Introduce the project and set up several goals (questions) that will reach a conclusion.
 
 ## 2. Related Works
 
-The file explorer is accessible using the button in left corner of the navigation bar. You can create a new file by clicking the **New file** button in the file explorer. You can also create folders by clicking the **New folder** button.
+Discuss former studies done on the topic.
 
 ## 3. Dataset Information
 
@@ -92,4 +92,4 @@ Determine what the next possible steps will be in researching this topic. (Large
 sample size, different approach, narrower/broader scope, etc.)
 
 # References
-StackEdit extends the standard Markdown syntax by adding extra **Markdown extensions**, providing you with some nice features.
+Copy bibliography here

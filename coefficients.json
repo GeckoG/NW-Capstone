@@ -1,0 +1,246 @@
+{
+    "Men": {
+        "100m": {
+            "resultShift": -17,
+            "conversionFactor": 24.63,
+            "pointShift": 0
+        },
+        "200m": {
+            "resultShift": -35.5,
+            "conversionFactor": 5.08,
+            "pointShift": 0
+        },
+        "400m": {
+            "resultShift": -79,
+            "conversionFactor": 1.021,
+            "pointShift": 0
+        },
+        "800m": {
+            "resultShift": -182,
+            "conversionFactor": 0.198,
+            "pointShift": 0
+        },
+        "1500m": {
+            "resultShift": -385,
+            "conversionFactor": 0.04066,
+            "pointShift": 0
+        },
+        "1600m": {
+            "resultShift": -415,
+            "conversionFactor": 0.0351,
+            "pointShift": 0
+        },
+        "3000m": {
+            "resultShift": -840,
+            "conversionFactor": 0.00815,
+            "pointShift": 0
+        },
+        "3200m": {
+            "resultShift": -904.8,
+            "conversionFactor": 0.00703,
+            "pointShift": 0
+        },
+        "5000m": {
+            "resultShift": -1440,
+            "conversionFactor": 0.002778,
+            "pointShift": 0
+        },
+        "10000m": {
+            "resultShift": -3150,
+            "conversionFactor": 0.000524,
+            "pointShift": 0
+        },
+        "110mH": {
+            "resultShift": -25.8,
+            "conversionFactor": 7.66,
+            "pointShift": 0
+        },
+        "400mH": {
+            "resultShift": -95.5,
+            "conversionFactor": 0.546,
+            "pointShift": 0
+        },
+        "2000mSC": {
+            "resultShift": -660,
+            "conversionFactor": 0.01023,
+            "pointShift": 0
+        },
+        "3000mSC": {
+            "resultShift": -1020,
+            "conversionFactor": 0.004316,
+            "pointShift": 0
+        },
+        "4x100m": {
+            "resultShift": -69.5,
+            "conversionFactor": 1.236,
+            "pointShift": 0
+        },
+        "4x400m": {
+            "resultShift": -334,
+            "conversionFactor": 0.0505,
+            "pointShift": 0
+        },
+        "High Jump": {
+            "resultShift": 11.534,
+            "conversionFactor": 32.29,
+            "pointShift": -5000
+        },
+        "Pole Vault": {
+            "resultShift": 39.39,
+            "conversionFactor": 3.042,
+            "pointShift": -5000
+        },
+        "Long Jump": {
+            "resultShift": 48.41,
+            "conversionFactor": 1.929,
+            "pointShift": -5000
+        },
+        "Triple Jump": {
+            "resultShift": 98.63,
+            "conversionFactor": 0.4611,
+            "pointShift": -5000
+        },
+        "Shot Put": {
+            "resultShift": 687.7,
+            "conversionFactor": 0.042172,
+            "pointShift": -20000
+        },
+        "Discus": {
+            "resultShift": 2232.6,
+            "conversionFactor": 0.004007,
+            "pointShift": -20000
+        },
+        "Hammer": {
+            "resultShift": 2649.4,
+            "conversionFactor": 0.0028462,
+            "pointShift": -20000
+        },
+        "Javelin": {
+            "resultShift": 2886.8,
+            "conversionFactor": 0.0023974,
+            "pointShift": -20000
+        }
+    },
+    "Women": {
+        "100m": {
+            "resultShift": -22,
+            "conversionFactor": 9.92,
+            "pointShift": 0
+        },
+        "200m": {
+            "resultShift": -45.5,
+            "conversionFactor": 2.242,
+            "pointShift": 0
+        },
+        "400m": {
+            "resultShift": -110,
+            "conversionFactor": 0.335,
+            "pointShift": 0
+        },
+        "800m": {
+            "resultShift": -250,
+            "conversionFactor": 0.0688,
+            "pointShift": 0
+        },
+        "1500m": {
+            "resultShift": -540,
+            "conversionFactor": 0.0134,
+            "pointShift": 0
+        },
+        "1600m": {
+            "resultShift": -580,
+            "conversionFactor": 0.01165,
+            "pointShift": 0
+        },
+        "3000m": {
+            "resultShift": -1200,
+            "conversionFactor": 0.002539,
+            "pointShift": 0
+        },
+        "3200": {
+            "resultShift": -1296.3,
+            "conversionFactor": 0.002157,
+            "pointShift": 0
+        },
+        "5000m": {
+            "resultShift": -2100,
+            "conversionFactor": 0.000808,
+            "pointShift": 0
+        },
+        "10000m": {
+            "resultShift": -4500,
+            "conversionFactor": 0.0001712,
+            "pointShift": 0
+        },
+        "100mH": {
+            "resultShift": -30,
+            "conversionFactor": 3.98,
+            "pointShift": 0
+        },
+        "400mH": {
+            "resultShift": -130,
+            "conversionFactor": 0.208567,
+            "pointShift": 0
+        },
+        "2000mSC": {
+            "resultShift": -932,
+            "conversionFactor": 0.003636,
+            "pointShift": 0
+        },
+        "3000mSC": {
+            "resultShift": -1510,
+            "conversionFactor": 0.001323,
+            "pointShift": 0
+        },
+        "4x100m": {
+            "resultShift": -98,
+            "conversionFactor": 0.3895,
+            "pointShift": 0
+        },
+        "4x400m": {
+            "resultShift": -480,
+            "conversionFactor": 0.01562,
+            "pointShift": 0
+        },
+        "High Jump": {
+            "resultShift": 10.574,
+            "conversionFactor": 39.34,
+            "pointShift": -5000
+        },
+        "Pole Vault": {
+            "resultShift": 34.83,
+            "conversionFactor": 3.953,
+            "pointShift": -5000
+        },
+        "Long Jump": {
+            "resultShift": 49.24,
+            "conversionFactor": 1.966,
+            "pointShift": -5000
+        },
+        "Triple Jump": {
+            "resultShift": 105.53,
+            "conversionFactor": 0.4282,
+            "pointShift": -5000
+        },
+        "Shot Put": {
+            "resultShift": 657.53,
+            "conversionFactor": 0.0462,
+            "pointShift": -20000
+        },
+        "Discus": {
+            "resultShift": 2227.3,
+            "conversionFactor": 0.0040277,
+            "pointShift": -20000
+        },
+        "Hammer": {
+            "resultShift": 2540,
+            "conversionFactor": 0.0030965,
+            "pointShift": -20000
+        },
+        "Javelin": {
+            "resultShift": 2214.9,
+            "conversionFactor": 0.004073,
+            "pointShift": -20000
+        }
+    }
+}

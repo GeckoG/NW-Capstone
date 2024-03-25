@@ -2,19 +2,24 @@ import json
 import openpyxl
 
 # Load the JSON file
-with open('data.json') as f:
+with open('coefficients.json') as f:
     data = json.load(f)
+    print("JSON Loaded")
 
 # Load the Excel file
 workbook = openpyxl.load_workbook('Cleaned-Data.xlsx')
+print("Workbook Loaded")
 sheet = workbook.active
+print("Sheet Loaded")
+
+rownum = 2
 
 # Iterate through rows
-for row in sheet.iter_rows(min_row=2, values_only=True):  # Assuming data starts from row 2
+for row in sheet.iter_rows(min_row=rownum, values_only=True):  # Assuming data starts from row 2
     sex = row[3]  # Pull the sex from column D
     event = row[6]  # Pull the event from column G
     result = row[1] # Pull the result from column B
-
+    print("Reading row " + str(row))
 
     # Access the data using keys from the Excel file
     if sex in data and event in data[sex]:
@@ -24,13 +29,14 @@ for row in sheet.iter_rows(min_row=2, values_only=True):  # Assuming data starts
         pointShift = coeffs["pointShift"]
 
         # Calculating the score
-        score = (conversionFactor * (result + resultShift)^2 + pointShift)
+        score = (conversionFactor * ((result + resultShift) * (result + resultShift)) + pointShift)
 
         # Write the score to column K
-        sheet.cell(row=row[0], column=11).value = score  # Column K corresponds to index 11 (Python uses 0-based indexing)
+        sheet.cell(row=rownum, column=11).value = score  # Column K corresponds to index 11 (Python uses 0-based indexing)
+        rownum = rownum + 1     # Increment the row number for the next iteration
 
     else:
         print(f"Data not found for {sex} {event}")
 
 # Save the modified Excel file
-workbook.save('Cleaned-Data-modified.xlsx')
+workbook.save('Cleaned-Data.xlsx')

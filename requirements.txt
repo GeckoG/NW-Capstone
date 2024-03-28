@@ -1,0 +1,9 @@
+jupyter
+requests
+beautifulsoup4
+openpyxl
+selenium
+json5
+pandas
+matplotlib
+seaborn

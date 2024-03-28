@@ -19,7 +19,7 @@ for row in sheet.iter_rows(min_row=rownum, values_only=True):  # Assuming data s
     sex = row[3]  # Pull the sex from column D
     event = row[6]  # Pull the event from column G
     result = row[1] # Pull the result from column B
-    print("Reading row " + str(row))
+    #print("Reading row " + str(row))
 
     # Access the data using keys from the Excel file
     if sex in data and event in data[sex]:
@@ -33,10 +33,12 @@ for row in sheet.iter_rows(min_row=rownum, values_only=True):  # Assuming data s
 
         # Write the score to column K
         sheet.cell(row=rownum, column=11).value = score  # Column K corresponds to index 11 (Python uses 0-based indexing)
-        rownum = rownum + 1     # Increment the row number for the next iteration
 
     else:
         print(f"Data not found for {sex} {event}")
+        print(row)
+
+    rownum = rownum + 1     # Increment the row number for the next iteration
 
 # Save the modified Excel file
 workbook.save('Cleaned-Data.xlsx')

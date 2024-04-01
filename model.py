@@ -8,5 +8,5 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 # Load the data
-df = pd.read_csv('Cleaned-Data.csv')
+df = pd.read_csv('top100avg.csv')
 

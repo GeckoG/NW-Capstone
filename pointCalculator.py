@@ -32,7 +32,7 @@ for row in sheet.iter_rows(min_row=rownum, values_only=True):  # Assuming data s
         score = (conversionFactor * ((result + resultShift) * (result + resultShift)) + pointShift)
 
         # Write the score to column K
-        sheet.cell(row=rownum, column=11).value = score  # Column K corresponds to index 11 (Python uses 0-based indexing)
+        sheet.cell(row=rownum, column=11).value = score  # Column K corresponds to index 11
 
     else:
         print(f"Data not found for {sex} {event}")

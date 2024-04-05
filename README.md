@@ -45,6 +45,16 @@ Detailed description of what model was chosen and why
 Explain the training process, data split for training/testing sets, and possible
 retraining
 
+| Model                     | RMSE      | MAE       | R^2     |
+|---------------------------|-----------|-----------|---------|
+| Linear Regression         | 12.0338   | 9.8392    | 0.9973  |
+| Ridge Regression          | 12.0285   | 9.8337    | 0.9973  |
+| Lasso Regression          | 14.4212   | 11.5965   | 0.9962  |
+| Decision Tree Regression  | 38.6747   | 21.3415   | 0.9725  |
+| Random Forest Regression  | 27.1530   | 16.7773   | 0.9864  |
+| Support Vector Regression | 203.5704  | 169.8433  | 0.2379  |
+| Gradient Boosting Regression | 31.0387 | 16.5701   | 0.9823  |
+
 ### 5.3 Model Performance & Evaluation
 
 Explain the performance of the model, if it is viable to use in production, or if

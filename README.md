@@ -23,10 +23,12 @@ Below is an explanation of each file (in chronological order) and its relation t
 - **coefficients.json** - Required constants for pointCalculator.py
 - **top100avg_calculator.py** - Creates a separate dataset of top-100 averages for each gender/event/year
 - **top100avg.csv** - The dataset produced by top100avg_calculator.py
+- **top100avg_nofield.csv** - top100avg.csv with field event rows removed (used for testing purposes only)
 
 ### Notebooks
 - **EDA.ipynb** - Exploratory data analysis (Initial graphing)
 - **models.ipynb** - Model building, training, and selection
+- **model_scaling.ipynb** - Notebook for custom feature scaling model
 - **presentation.ipynb** - Organized presentation of results
 
 ## Project Introduction
@@ -165,27 +167,27 @@ A similar graph was created to show the average point total across all events fo
 Brief introduction to the ML model and the process of building one.
 
 
-| Model on Poorly Structured Data | RMSE      | MAE       | R^2     |
-|---------------------------|-----------|-----------|---------|
-| Linear Regression         | 12.0338   | 9.8392    | 0.9973  |
-| Ridge Regression          | 12.0285   | 9.8337    | 0.9973  |
-| Lasso Regression          | 14.4212   | 11.5965   | 0.9962  |
-| Decision Tree Regression  | 38.6747   | 21.3415   | 0.9725  |
-| Random Forest Regression  | 27.1530   | 16.7773   | 0.9864  |
-| Support Vector Regression | 203.5704  | 169.8433  | 0.2379  |
-| Gradient Boosting Regression | 31.0387 | 16.5701   | 0.9823  |
 
 
 
-| Model on Restructured Data | RMSE       | MAE        | R^2       |
+
+| Model on Entire Data      | RMSE       | MAE        | R^2       |
 |---------------------------|------------|------------|-----------|
 | Linear Regression         | 117.72177  | 95.72364   | 0.71382   |
+| Linear with Feature Scaling | 121.16606 | 88.08427  | 0.70197   |
 | Ridge Regression          | 117.72402  | 95.72757   | 0.71381   |
 | Lasso Regression          | 117.89145  | 96.06475   | 0.71299   |
 | Decision Tree Regression  | 22.18599   | 13.01396   | 0.98984   |
-| Random Forest Regression  | 17.06535   | 10.74354   | 0.99399   |
+| `Random Forest Regression`  | 17.06535   | `10.74354`   | `0.99399`   |
 | Support Vector Regression | 221.39544  | 184.32384  | -0.01220  |
-| Gradient Boosting Regression | 39.44551 | 28.18553   | 0.96787   |
+| Gradient Boosting Regression | 39.44551 | 28.18553   | 0.96787  |
+| Prophet (Time Series)     | 285.64590  | 235.14233  | -0.77249  |
+| VAR (Time Series)         | 215.25424  | 182.99602  | -0.00654  |
+| ARIMA (Time Series)       | LinAlg Error |          |           |
+
+| Model on Individual Subsets | RMSE      | MAE        | R^2     |
+|-----------------------------|-----------|------------|---------|
+| `Linear Regression`           | `16.0445`   | 12.1210    | `0.9945`  |
 
 
 ## Results
@@ -207,10 +209,11 @@ of each discipline, and why that may be the case
 
 ## Conclusion
 
-Come to a final stance on the main points outlined at the beginning, using the
-results from this study as the evidence for such a claim
+Given the results of this project, it does not appear that there is a meaningful relationship between events (within or outside the same division and/or sex), division (within or outside the same event and/or sex), or sex (within or outside the same division and/or event). While there may be similarities between series with one or more common traits (same division, sex, or event), but external series data should not be used in projections, as it was shown to be a detriment to model performance. Models are best suited to be trained on their own individual subset, even if the sample size is small. Additionally, the relationship among the 13-year timeframe studied was shown to be linear across all subsets. Projections beyond a few years is not recommended with this model, as the sample size is relatively small. Expanding the dataset to several decades may reveal a different shaped curve, and the linear nature may only be relevant to a small time period.
+
 
 ## Future Work
 
-Determine what the next possible steps will be in researching this topic. (Larger
-sample size, different approach, narrower/broader scope, etc.)
+Further research is suggested on this topic to further examine the human performance trends in the sport of track and field. Results from this study suggest a deeper view should be taken at individual subsets (ie. event/sex/division combinations) over a longer period of time, rather than multiple subsets over a short period of time. World Athletics, known in this project as the 'World' division, contains the largest backlog of performances, so it is the prime prospect for this kind of investigation.  
+
+Additionally, given the amount of data collected during this project, it would be advantageous to create a tool for readers to easily view filtered subsets of the data, rather than be limited to the figures shown in this report. A web app has been proposed, made with Shiny for Python, to reactively build graphs based on user-input filters. This way, readers can conduct their own exploratory analysis of the data, and stimulate new ideas for additional research. 

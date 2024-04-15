@@ -192,20 +192,21 @@ Brief introduction to the ML model and the process of building one.
 
 ## Results
 
-Brief introduction to the results of the model(s)
+With the Individual Subset Linear Regression model performing best with the training and testing data, that model was selected to project the 2024 point values. The choice was not difficult, as the only models that emerged with similar performance metrics were the tree-based models, which are incapable of making projections such as these. With this study being conducted in April 2024, the actual values for most divisions will be available within a few weeks of the project's completion. The indications of the training, however, suggest most of the projections will be within 20 points.
 
 ### Model Forecast
 
-Detailed look at where the model(s) say each discipline will project to.
+While the process for achieving the most accurate forecasts is quite complex, the results themselves are rather straightforward. The model projects several events (exactly half in the professional ranks) to see a decline in top-100 average point values. These events saw stronger rises in recent year(s), and the projection is suggesting a regression to the mean. It is important to understand that these are still following an upward linear trend, and the decline is due to the 2023 value being above the trendline. With 2024 being an Olympic year, these projections of decline may be more accurate for high school and college divisions, and the global division may see inaccuracies due to the Olympic Games.
 
 ### Variation Across Events
 
-Detailed look at how the historical progression differs among disciplines.
+Each discipline in track and field appears to be on its own trajectory, with enough underlying factors for each one, making it distinct from the others. To better understand which events are advancing at faster rates, the charts like those shown in figures 2 and 3 were zero-shifted from 2010. This illustrates the change since 2010 without any initial bias. With a common starting point, Figure 7 makes it easier to view which events have seen the most growth since 2010, without the initial bias of some events starting higher than others. Figure 7 only shows values for the Global Women's leaderboard, but other divisions show similar results. In most divisions, the high jump is revealed to be the most stagnant over the time period, while the 100 meter is generally among the top growing events. Some events, like the shot put, vary widely between divisions. Overall, however, very few events, regardless of division, have seen notable decline. Of the ones that have seen a lower value in 2023 than 2010, all of them come from field events. The uniform growth of the running events raises questions, since both running and field events share a long history of maximal human performance. That characteristic should provide similar growth trajectories, so it appears that there may be an underlying force, unique to the running events, that is impacting these statistics. Early speculation would suggest 'super spikes' as this force, but research has yet to confirm this claim.
+
+![Zero Based Graph](/Images/result1.png)
 
 ### Similarities Between Events
 
-(IF NEEDED) Dive into the details of if there are similarities in the progression
-of each discipline, and why that may be the case
+While there are clear differences among each event, division, and sex, there are also visable similarities. In most cases, there is an upward trend, particularly in the running events. Several distance events have seen a spike in more recent years. In the case of divisions, it appears that NAIA and NCAA D-III are a few years behind NCAA D-I and D-II, with their rises appearing to mirror the latter group's changes about two years later. Additionally, the worldwide division shows a cycle that matches the Olympic Games. The figure above illustrates this nicely, with visable peaks in 2012 and 2016. It can safely be concluded that there are inherent similarities across events and divisions, but as the model results indicate, those similarities are not beneficial towards modeling with the information collected in this study.
 
 ## Conclusion
 

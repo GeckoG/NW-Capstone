@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 top100avg.xlsx
 custom model.xlsx
+top100avg_series_diff.csv

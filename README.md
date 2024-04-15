@@ -36,7 +36,7 @@ Below is an explanation of each file (in chronological order) and its relation t
 The goal of this project is to find trends in the top-100 performances of each year across various track and field events. Ultimately, a model was created to forecast the top-100 average for future years. There were several steps to this project, each of which encompassed one or more of the NWMSU Data Analytics program objectives. The process was as follows:
 
 1. Scrape the data from results databases on the internet
-2. Clean the data into 
+2. Clean the data
 3. Exploratory Data Analysis
 4. Statistical analysis & manipulation
 5. Model Building
